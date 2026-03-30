@@ -2,10 +2,33 @@
 <html>
 <head>
   <title>NeuroPlay</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>NeuroPlay</h1>
+<h1>🎬 NeuroPlay</h1>
+
+<button onclick="login()">Entrar</button>
+
+<div class="filmes"></div>
+
+<!-- ADMIN -->
+<div id="adminPanel" style="display:none;">
+  <h2>Painel Admin ⚙️</h2>
+
+  <input type="text" id="titulo" placeholder="Nome do filme">
+  <input type="text" id="url" placeholder="Link do vídeo">
+
+  <button onclick="adicionarFilme()">Adicionar Filme</button>
+
+  <br><br>
+
+  <input type="color" id="corSite">
+  <button onclick="mudarCor()">Mudar cor</button>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
